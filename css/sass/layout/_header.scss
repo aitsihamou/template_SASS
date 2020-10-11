@@ -1,0 +1,87 @@
+.header {
+	padding:20px 0px;
+	overflow: hidden;
+	border-bottom: 1px solid $trecolor ;
+	.logo {
+		width: 30% ;
+		float: left ;
+//=======================
+ 		@media #{$maxMobile} {
+			width: 100% ;
+		    float: none ;
+		    text-align: center;
+		} 
+//=====================
+		@media #{$minSmall} {
+			width: 100% ;
+		    float: none ;
+		    text-align: center;
+		}
+		@media #{$minMeduim} {
+			width: 30% ;
+		    float: left ;
+		    text-align: left;
+		}
+		h1{
+			color:$seccolor ;
+			margin-bottom: 0px;
+			margin-top: 0px;
+			i { margin-left: 15px;}
+		}
+		p{
+			color:$lastcolor ;
+			margin-top: 0px;
+		}
+
+	}
+	.navbar{
+		width: 70% ;
+		float: left ;
+		background-color: $seccolor ;
+		border-radius: 20px ;
+		overflow: hidden;
+		@media #{$minSmall} {
+			width: 100% ;
+		    float: none ;
+		    text-align: center;
+		    .dropbtn {display: none}
+		    .menu {display:block !important}
+		}
+		@media #{$minMeduim} {
+			width: 70% ;
+		    float: left ;
+		    text-align: left;
+		    .menu {display:block !important}
+		}
+//=======================
+	@media #{$maxMobile}{
+		width: 100% ;
+		float: none ;
+		.menu {display: none ;}
+		.menu {li{display: block;  width: 100% ;}}
+		.dropbtn {
+		i{ color : white}
+		width: 100% ; border:none; background-color: $seccolor ; padding: 10px;
+		}
+	}	
+//=====================
+		ul{
+			display: inline ;
+			li{
+				width: 25% ;
+				float: left ;
+				font-size: 25px ;
+				text-align: center;
+				a {
+					color :white;
+					padding:15px 10px;
+					display: inline-block ;
+					text-decoration: none ;
+					&:hover {color :$trecolor;} ;
+				}
+			}
+
+		}
+
+	}
+}

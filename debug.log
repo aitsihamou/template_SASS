@@ -1,0 +1,11 @@
+[0714/112155.357:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/144748.301:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0715/172210.072:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0827/112058.023:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0827/213819.002:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0830/155956.456:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0920/160450.863:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0929/123433.051:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1001/175446.936:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1002/153949.986:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1010/191330.771:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)
