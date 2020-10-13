@@ -1,9 +1,11 @@
 .head-with-border {
 	position: relative;
 	h2{
-	background-color: $seccolor ;
-	color :white;
+	background-color: white ;
+	color :$seccolor ;
 	text-align: center;
+	font-size: 40px;
+	font-family: monospace;
 	margin:20px auto;
 	width: 400px;
 	padding:10px 5px ;

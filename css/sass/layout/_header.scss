@@ -1,87 +1,117 @@
 .header {
-	padding:20px 0px;
 	overflow: hidden;
-	border-bottom: 1px solid $trecolor ;
 	.logo {
-		width: 30% ;
-		float: left ;
-//=======================
- 		@media #{$maxMobile} {
-			width: 100% ;
-		    float: none ;
-		    text-align: center;
-		} 
-//=====================
+		width: 30%;
+		float: left;
+		padding: 0px;
+		margin-top: 10px;
+		//=======================
+		@media #{$maxMobile} {
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
+		//=====================
 		@media #{$minSmall} {
-			width: 100% ;
-		    float: none ;
-		    text-align: center;
+			width: 100%;
+			float: none;
+			text-align: center;
 		}
 		@media #{$minMeduim} {
-			width: 30% ;
-		    float: left ;
-		    text-align: left;
+			width: 30%;
+			float: left;
 		}
-		h1{
-			color:$seccolor ;
+		h1 {
+			color: $seccolor;
 			margin-bottom: 0px;
 			margin-top: 0px;
-			i { margin-left: 15px;}
+			i {
+				margin-left: 15px;
+			}
 		}
-		p{
-			color:$lastcolor ;
+		p {
+			color: $lastcolor;
 			margin-top: 0px;
 		}
-
 	}
-	.navbar{
-		width: 70% ;
-		float: left ;
-		background-color: $seccolor ;
-		border-radius: 20px ;
+	.navbar {
 		overflow: hidden;
 		@media #{$minSmall} {
-			width: 100% ;
-		    float: none ;
-		    text-align: center;
-		    .dropbtn {display: none}
-		    .menu {display:block !important}
-		}
-		@media #{$minMeduim} {
-			width: 70% ;
-		    float: left ;
-		    text-align: left;
-		    .menu {display:block !important}
-		}
-//=======================
-	@media #{$maxMobile}{
-		width: 100% ;
-		float: none ;
-		.menu {display: none ;}
-		.menu {li{display: block;  width: 100% ;}}
-		.dropbtn {
-		i{ color : white}
-		width: 100% ; border:none; background-color: $seccolor ; padding: 10px;
-		}
-	}	
-//=====================
-		ul{
-			display: inline ;
-			li{
-				width: 25% ;
-				float: left ;
-				font-size: 25px ;
-				text-align: center;
+			background-color: $seccolor;
+			width: 100%;
+			float: none;
+			text-align: center;
+			margin-bottom: 15px;
+			.dropbtn {
+				display: none;
+			}
+			.menu {
+				display: block !important;
 				a {
-					color :white;
-					padding:15px 10px;
-					display: inline-block ;
-					text-decoration: none ;
-					&:hover {color :$trecolor;} ;
+					color: white;
 				}
 			}
-
 		}
-
+		@media #{$minMeduim} {
+			background-color: white;
+			width: 70%;
+			float: left;
+			padding: 0px;
+			margin: 35px auto;
+			text-align: left;
+			.menu {
+				background-color: white;
+				a {
+					color: $seccolor;
+				}
+			}
+		}
+		//=======================
+		@media #{$maxMobile} {
+			width: 100%;
+			float: none;
+			margin-bottom: 15px;
+			.menu {
+				display: none;
+			}
+			.menu {
+				li {
+					display: block;
+					width: 100%;
+					background-color: $seccolor;
+					a {
+						color: white;
+					}
+				}
+			}
+			.dropbtn {
+				i {
+					color: white;
+				}
+				width: 100%;
+				border: none;
+				background-color: $seccolor;
+				padding: 10px;
+			}
+		}
+		//=====================
+		ul {
+			display: inline;
+			li {
+				width: 25%;
+				float: left;
+				font-size: 25px;
+				text-align: center;
+				a {
+					color: $seccolor;
+					padding: 15px 10px;
+					display: inline-block;
+					text-decoration: none;
+					&:hover {
+						color: $trecolor;
+					}
+				}
+			}
+		}
 	}
 }
