@@ -121,11 +121,9 @@
 		float: left;
 		text-align: center;
 		padding: 10px 10px 10px 5px;
-		background: linear-gradient(to top, #e9982d, #dcb959f6, #d6d48ec4, #dcebc35e, #f4fcf300);
-		border-radius: 30px 30px 20px 20px;
-		&:hover {
-			background: linear-gradient(to top, #e9982d, #e9982d, #e9982d, #dcb959, #dcb959);
-		}
+		border: 2px solid;
+		border-image: conic-gradient(white, $seccolor, white, orange, white, $seccolor, white, orange, white) 1;
+
 		@media #{$minSmall} {
 			width: (94% / 2);
 			margin: 20px 0px 0px 20px;
@@ -136,27 +134,31 @@
 		}
 		@media #{$maxMobile} {
 			margin: 20px;
-			.team-box-img {
-				img {
-					padding: 5px;
-					background-color: $seccolor;
-				}
-			}
 		}
 
 		.team-box-img {
+			@media #{$maxMobile} {
+				border-radius: 50%;
+
+				img {
+					background: linear-gradient(to top, #ee8904, #e7a042, #c0e92d, #aedc59, #89dc59);
+					border-radius: 50% !important ;
+					padding: 5px;
+				}
+			}
 			@media #{$minSmall} {
 				height: 200px;
 				width: 200px;
-				border-radius: 50%;
-				background-color: $trecolor;
+				border-radius: 33% 42% 31% 36% / 56% 20% 47% 27%;
+				background: linear-gradient(to top, #ee8904, #e7a042, #c0e92d, #aedc59, #89dc59);
 				padding: 5px;
 				margin: auto;
 			}
 			img {
 				height: 200px;
 				width: 200px;
-				border-radius: 50%;
+				border: 4px solid white;
+				border-radius: 69% 6% 63% 12% / 40% 26% 54% 52%;
 			}
 		}
 		.team-box-name {
@@ -182,7 +184,8 @@
 			}
 		}
 		.team-box-links {
-			margin-top: -15px;
+			display: none;
+			margin: -30px;
 			ul {
 				display: inline-flex;
 				background-color: white;
@@ -193,12 +196,17 @@
 					font-size: 25px;
 					color: $firstcolor;
 					&:hover {
-						color:$trecolor;
+						color: $trecolor;
 					}
 				}
 				li:last-child {
 					margin-left: 40px;
 				}
+			}
+		}
+		&:hover {
+			.team-box-links {
+				display: block;
 			}
 		}
 	}
