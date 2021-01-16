@@ -380,8 +380,12 @@ ul, ol {
       font-size: 15px;
       line-height: 1.5; }
   .teamwork .team-box .team-box-links {
-    display: none;
-    margin: -30px; }
+    visibility: hidden;
+    margin-top: -15px;
+    margin-bottom: -45px; }
+    @media (max-width: 767px) {
+      .teamwork .team-box .team-box-links {
+        visibility: visible; } }
     .teamwork .team-box .team-box-links ul {
       display: inline-flex;
       background-color: white;
@@ -396,7 +400,7 @@ ul, ol {
       .teamwork .team-box .team-box-links ul li:last-child {
         margin-left: 40px; }
   .teamwork .team-box:hover .team-box-links {
-    display: block; }
+    visibility: visible; }
 
 .limages {
   /* Next & previous buttons */

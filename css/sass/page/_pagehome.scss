@@ -184,8 +184,12 @@
 			}
 		}
 		.team-box-links {
-			display: none;
-			margin: -30px;
+			visibility: hidden;
+			@media #{$maxMobile} {
+				visibility: visible;
+			}
+			margin-top: -15px;
+			margin-bottom: -45px;
 			ul {
 				display: inline-flex;
 				background-color: white;
@@ -206,7 +210,7 @@
 		}
 		&:hover {
 			.team-box-links {
-				display: block;
+				visibility: visible;
 			}
 		}
 	}
